@@ -1,13 +1,19 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --bg: #050505;
+  --fg: #f5f5f5;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --muted: rgba(255, 255, 255, 0.72);
+  --muted-2: rgba(255, 255, 255, 0.55);
+
+  --card: #ffffff;
+  --card-fg: #0b0b0b;
+  --card-muted: rgba(0, 0, 0, 0.64);
+
+  --border: rgba(255, 255, 255, 0.12);
+  --border-2: rgba(0, 0, 0, 0.10);
+
+  --shadow: 0 18px 70px rgba(0, 0, 0, 0.35);
+  --radius: 18px;
 }
 
 html {
@@ -24,9 +30,11 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--fg);
+  background: radial-gradient(1200px 700px at 20% 0%, rgba(255, 255, 255, 0.08), transparent 55%),
+    radial-gradient(900px 600px at 95% 10%, rgba(255, 255, 255, 0.06), transparent 55%),
+    var(--bg);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,8 +50,180 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+html {
+  color-scheme: dark;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 20px 44px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(5, 5, 5, 0.55);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbarInner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brandMark {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.55) 100%);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.08);
+}
+
+.brandName {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav a {
+  color: var(--muted);
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.nav a:hover {
+  color: var(--fg);
+  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero {
+  padding: 44px 0 16px;
+}
+
+.title {
+  font-size: 44px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.card {
+  grid-column: span 12;
+  background: var(--card);
+  color: var(--card-fg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-2);
+  box-shadow: var(--shadow);
+  padding: 18px 18px;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
+}
+
+.card p {
+  margin: 0;
+  color: var(--card-muted);
+  line-height: 1.65;
+}
+
+.cardLinks {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border-2);
+  background: rgba(0, 0, 0, 0.03);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.pill:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.footer {
+  margin-top: 38px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--muted-2);
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer a {
+  color: var(--muted);
+}
+
+.footer a:hover {
+  color: var(--fg);
+}
+
+@media (min-width: 900px) {
+  .card {
+    padding: 22px 22px;
+  }
+  .title {
+    font-size: 56px;
+  }
+  .subtitle {
+    font-size: 19px;
+  }
+  .card.half {
+    grid-column: span 6;
   }
 }
+

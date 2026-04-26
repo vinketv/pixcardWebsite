@@ -1,25 +1,67 @@
 export default function Home() {
   return (
-    <main style={{ maxWidth: 820, margin: "0 auto", padding: "48px 20px", fontFamily: "system-ui" }}>
-      <h1 style={{ fontSize: 32, marginBottom: 10 }}>CardShot</h1>
-      <p style={{ opacity: 0.8, marginTop: 0 }}>
-        Outil simple pour photographier une carte (recto/verso) et générer un collage prêt à publier.
-      </p>
+    <>
+      <header className="topbar">
+        <div className="topbarInner">
+          <div className="brand">
+            <div className="brandMark" aria-hidden />
+            <div className="brandName">CardShot</div>
+          </div>
+          <nav className="nav">
+            <a href="/privacy">Confidentialité</a>
+            <a href="/terms">CGU</a>
+            <a href="/legal">Mentions légales</a>
+          </nav>
+        </div>
+      </header>
 
-      <ul style={{ marginTop: 24 }}>
-        <li>
-          <a href="/privacy">Politique de confidentialité</a>
-        </li>
-        <li>
-          <a href="/terms">Conditions générales (CGU)</a>
-        </li>
-        <li>
-          <a href="/legal">Mentions légales</a>
-        </li>
-        <li>
-          <a href="/app-ads.txt">app-ads.txt</a>
-        </li>
-      </ul>
-    </main>
+      <main className="container">
+        <section className="hero">
+          <h1 className="title">Photographie tes cartes. Publie plus vite.</h1>
+          <p className="subtitle">
+            CardShot te permet de prendre une photo du recto puis du verso et de générer un collage propre,
+            prêt à poster sur les plateformes de vente.
+          </p>
+        </section>
+
+        <section className="grid">
+          <article className="card half">
+            <h2>Simple</h2>
+            <p>Deux photos (recto/verso) → un collage prêt à partager.</p>
+          </article>
+          <article className="card half">
+            <h2>Rapide</h2>
+            <p>Un flux caméra optimisé pour enchaîner les cartes sans friction.</p>
+          </article>
+          <article className="card">
+            <h2>Liens utiles</h2>
+            <p>Documents légaux et fichier app-ads.txt requis pour AdMob.</p>
+            <div className="cardLinks">
+              <a className="pill" href="/privacy">
+                Politique de confidentialité
+              </a>
+              <a className="pill" href="/terms">
+                Conditions générales
+              </a>
+              <a className="pill" href="/legal">
+                Mentions légales
+              </a>
+              <a className="pill" href="/app-ads.txt">
+                app-ads.txt
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <footer className="footer">
+          <div>© {new Date().getFullYear()} CardShot</div>
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <a href="/privacy">Confidentialité</a>
+            <a href="/terms">CGU</a>
+            <a href="/legal">Mentions légales</a>
+          </div>
+        </footer>
+      </main>
+    </>
   );
 }
