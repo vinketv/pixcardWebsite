@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CardShot",
-  description: "CardShot — photographiez une carte recto/verso et générez un collage prêt à publier.",
+  title: "PixCard",
+  description: "PixCard — photographiez une carte recto/verso et générez un collage prêt à publier.",
 };
 
 export default function RootLayout({

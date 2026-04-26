@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Conditions Générales d’Utilisation — CardShot",
+  title: "Conditions Générales d’Utilisation — PixCard",
 };
 
 export default function TermsPage() {
@@ -9,7 +9,7 @@ export default function TermsPage() {
         <div className="topbarInner">
           <div className="brand">
             <div className="brandMark" aria-hidden />
-            <div className="brandName">CardShot</div>
+            <div className="brandName">PixCard</div>
           </div>
           <nav className="nav">
             <a href="/">Accueil</a>
@@ -29,7 +29,7 @@ export default function TermsPage() {
           <article className="card">
             <h2>1) Objet</h2>
             <p>
-              CardShot est une application mobile permettant de prendre des photos d’une carte (recto/verso) et de
+              PixCard est une application mobile permettant de prendre des photos d’une carte (recto/verso) et de
               générer un collage prêt à être partagé ou publié.
             </p>
           </article>
@@ -54,7 +54,7 @@ export default function TermsPage() {
           <article className="card">
             <h2>4) Responsabilités</h2>
             <p>
-              CardShot est fourni “en l’état”. L’éditeur ne garantit pas l’absence d’erreurs ni la disponibilité
+              PixCard est fourni “en l’état”. L’éditeur ne garantit pas l’absence d’erreurs ni la disponibilité
               continue. L’utilisateur reste responsable des contenus qu’il photographie, partage ou publie.
             </p>
           </article>
@@ -68,7 +68,7 @@ export default function TermsPage() {
         </section>
 
         <footer className="footer">
-          <div>© {new Date().getFullYear()} CardShot</div>
+          <div>© {new Date().getFullYear()} PixCard</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <a href="/privacy">Confidentialité</a>
             <a href="/terms">CGU</a>

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Politique de confidentialité — CardShot",
+  title: "Politique de confidentialité — PixCard",
 };
 
 const UPDATED_AT = "2026-04-26";
@@ -12,7 +12,7 @@ export default function PrivacyPage() {
         <div className="topbarInner">
           <div className="brand">
             <div className="brandMark" aria-hidden />
-            <div className="brandName">CardShot</div>
+            <div className="brandName">PixCard</div>
           </div>
           <nav className="nav">
             <a href="/">Accueil</a>
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           <article className="card">
             <h2>2) Publicités & partenaires</h2>
             <p>
-              CardShot utilise Google AdMob. Google peut traiter des identifiants publicitaires et des informations
+              PixCard utilise Google AdMob. Google peut traiter des identifiants publicitaires et des informations
               techniques pour fournir et mesurer les annonces, conformément à sa documentation et aux choix de
               consentement applicables.
             </p>
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
           <article className="card">
             <h2>4) Conservation</h2>
             <p>
-              CardShot ne stocke pas vos photos sur un serveur. Les éventuels identifiants publicitaires sont gérés
+              PixCard ne stocke pas vos photos sur un serveur. Les éventuels identifiants publicitaires sont gérés
               par les SDK publicitaires selon leurs politiques.
             </p>
           </article>
@@ -85,7 +85,7 @@ export default function PrivacyPage() {
         </section>
 
         <footer className="footer">
-          <div>© {new Date().getFullYear()} CardShot</div>
+          <div>© {new Date().getFullYear()} PixCard</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <a href="/privacy">Confidentialité</a>
             <a href="/terms">CGU</a>

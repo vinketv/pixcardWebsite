@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Mentions légales — CardShot",
+  title: "Mentions légales — PixCard",
 };
 
 export default function LegalPage() {
@@ -9,7 +9,7 @@ export default function LegalPage() {
         <div className="topbarInner">
           <div className="brand">
             <div className="brandMark" aria-hidden />
-            <div className="brandName">CardShot</div>
+            <div className="brandName">PixCard</div>
           </div>
           <nav className="nav">
             <a href="/">Accueil</a>
@@ -49,14 +49,14 @@ export default function LegalPage() {
           <article className="card">
             <h2>Propriété intellectuelle</h2>
             <p>
-              Les éléments de CardShot (marque, visuels, textes) sont protégés. Toute reproduction non autorisée
+              Les éléments de PixCard (marque, visuels, textes) sont protégés. Toute reproduction non autorisée
               est interdite.
             </p>
           </article>
         </section>
 
         <footer className="footer">
-          <div>© {new Date().getFullYear()} CardShot</div>
+          <div>© {new Date().getFullYear()} PixCard</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <a href="/privacy">Confidentialité</a>
             <a href="/terms">CGU</a>

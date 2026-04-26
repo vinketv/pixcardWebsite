@@ -5,7 +5,7 @@ export default function Home() {
         <div className="topbarInner">
           <div className="brand">
             <div className="brandMark" aria-hidden />
-            <div className="brandName">CardShot</div>
+            <div className="brandName">PixCard</div>
           </div>
           <nav className="nav">
             <a href="/privacy">Confidentialité</a>
@@ -19,7 +19,7 @@ export default function Home() {
         <section className="hero">
           <h1 className="title">Photographie tes cartes. Publie plus vite.</h1>
           <p className="subtitle">
-            CardShot te permet de prendre une photo du recto puis du verso et de générer un collage propre,
+            PixCard te permet de prendre une photo du recto puis du verso et de générer un collage propre,
             prêt à poster sur les plateformes de vente.
           </p>
         </section>
@@ -54,7 +54,7 @@ export default function Home() {
         </section>
 
         <footer className="footer">
-          <div>© {new Date().getFullYear()} CardShot</div>
+          <div>© {new Date().getFullYear()} PixCard</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <a href="/privacy">Confidentialité</a>
             <a href="/terms">CGU</a>
