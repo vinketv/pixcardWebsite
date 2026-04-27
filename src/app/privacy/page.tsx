@@ -13,9 +13,14 @@ export default function PrivacyPage() {
       <header className="topbar">
         <div className="topbarInner">
           <div className="brand">
-            <div className="brandLogo" aria-label="PixCard">
-              <Image src="/logo.png" alt="PixCard" width={64} height={64} priority />
-            </div>
+            <Image
+              src="/logo.png"
+              alt="PixCard"
+              width={34}
+              height={34}
+              priority
+              style={{ borderRadius: 12 }}
+            />
           </div>
           <nav className="nav">
             <a href="/">Accueil</a>
