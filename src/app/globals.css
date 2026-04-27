@@ -34,7 +34,8 @@ body {
   background: radial-gradient(1200px 700px at 20% 0%, rgba(255, 255, 255, 0.08), transparent 55%),
     radial-gradient(900px 600px at 95% 10%, rgba(255, 255, 255, 0.06), transparent 55%),
     var(--bg);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-space-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
