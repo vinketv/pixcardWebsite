@@ -10,15 +10,9 @@ export default function TermsPage() {
       <header className="topbar">
         <div className="topbarInner">
           <div className="brand">
-            <Image
-              src="/logo.png"
-              alt="PixCard"
-              width={34}
-              height={34}
-              priority
-              style={{ borderRadius: 12 }}
-            />
-            <div className="brandName">PixCard</div>
+            <div className="brandLogo" aria-label="PixCard">
+              <Image src="/logo.png" alt="PixCard" width={64} height={64} priority />
+            </div>
           </div>
           <nav className="nav">
             <a href="/">Accueil</a>
