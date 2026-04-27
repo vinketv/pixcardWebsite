@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "Politique de confidentialité — PixCard",
 };
@@ -11,7 +13,14 @@ export default function PrivacyPage() {
       <header className="topbar">
         <div className="topbarInner">
           <div className="brand">
-            <div className="brandMark" aria-hidden />
+            <Image
+              src="/logo.png"
+              alt="PixCard"
+              width={34}
+              height={34}
+              priority
+              style={{ borderRadius: 12 }}
+            />
             <div className="brandName">PixCard</div>
           </div>
           <nav className="nav">
