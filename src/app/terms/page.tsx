@@ -4,6 +4,8 @@ export const metadata = {
   title: "Conditions Générales d’Utilisation — PixCard",
 };
 
+const APP_STORE_URL = "https://apps.apple.com/fr/app/pixcard/id6764064668";
+
 export default function TermsPage() {
   return (
     <>
@@ -21,6 +23,9 @@ export default function TermsPage() {
           </div>
           <nav className="nav">
             <a href="/">Accueil</a>
+            <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+              App Store
+            </a>
             <a href="/privacy">Confidentialité</a>
             <a href="/legal">Mentions légales</a>
           </nav>
@@ -78,6 +83,9 @@ export default function TermsPage() {
         <footer className="footer">
           <div>© {new Date().getFullYear()} PixCard</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+              App Store
+            </a>
             <a href="/privacy">Confidentialité</a>
             <a href="/terms">CGU</a>
             <a href="/legal">Mentions légales</a>

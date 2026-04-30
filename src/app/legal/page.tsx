@@ -4,6 +4,8 @@ export const metadata = {
   title: "Mentions légales — PixCard",
 };
 
+const APP_STORE_URL = "https://apps.apple.com/fr/app/pixcard/id6764064668";
+
 export default function LegalPage() {
   return (
     <>
@@ -21,6 +23,9 @@ export default function LegalPage() {
           </div>
           <nav className="nav">
             <a href="/">Accueil</a>
+            <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+              App Store
+            </a>
             <a href="/privacy">Confidentialité</a>
             <a href="/terms">CGU</a>
           </nav>
@@ -37,11 +42,20 @@ export default function LegalPage() {
           <article className="card">
             <h2>Éditeur</h2>
             <p>
-              Nom / société : <em>à renseigner</em>
+              Nom : <strong>Kevin Sanches</strong>
               <br />
-              Adresse : <em>à renseigner</em>
+              Adresse : 2 bis rue Gallieni, 78300 Poissy, France
               <br />
-              Email : <a href="mailto:support@pixcard.app">support@pixcard.app</a>
+              Email : <a href="mailto:kevin.sanches.ytb@gmail.com">kevin.sanches.ytb@gmail.com</a>
+              <br />
+              Support : <a href="mailto:support@pixcard.app">support@pixcard.app</a>
+              <br />
+              Téléphone : <a href="tel:+33769783207">+33 7 69 78 32 07</a>
+              <br />
+              App Store :{" "}
+              <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+                PixCard
+              </a>
             </p>
           </article>
 

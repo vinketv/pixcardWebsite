@@ -4,6 +4,8 @@ export const metadata = {
   title: "Politique de confidentialité — PixCard",
 };
 
+const APP_STORE_URL = "https://apps.apple.com/fr/app/pixcard/id6764064668";
+
 const UPDATED_AT = "2026-04-26";
 const SUPPORT_EMAIL = "support@pixcard.app";
 
@@ -24,6 +26,9 @@ export default function PrivacyPage() {
           </div>
           <nav className="nav">
             <a href="/">Accueil</a>
+            <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+              App Store
+            </a>
             <a href="/terms">CGU</a>
             <a href="/legal">Mentions légales</a>
           </nav>
@@ -95,6 +100,9 @@ export default function PrivacyPage() {
         <footer className="footer">
           <div>© {new Date().getFullYear()} PixCard</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+              App Store
+            </a>
             <a href="/privacy">Confidentialité</a>
             <a href="/terms">CGU</a>
             <a href="/legal">Mentions légales</a>
